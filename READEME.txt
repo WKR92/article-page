@@ -1,0 +1,1 @@
+Site made in purpose of training Bootstrap, Vanilia JS, WebPack and ability to prepare article pages.

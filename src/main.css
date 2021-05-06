@@ -1,0 +1,302 @@
+/* structure */
+    /* global variables */
+    /* navbar */
+    /* header */
+    /* main */
+        /* left aside */
+        /* article section */
+            /* form and comments */
+        /* right aside */
+            /* similar/recent news */
+    /* footer */
+
+/* ############################################ */
+
+/* global variables */
+
+:root {
+    --healthColor: rgb(118, 190, 9);
+    --birdNewsMainColor: rgb(3, 154, 204);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.navbar-toggler, button {
+    outline: none !important;
+    box-shadow: none !important;
+    border: none
+}
+
+/* navbar */
+
+.mainNavBar {
+    z-index: 9999;
+    top: 0px;
+}
+
+.mainNavBar a:hover {
+    color: var(--birdNewsMainColor) !important
+}
+
+.mainNavBar .innerMainNavDiv {
+    max-width: 1200px;
+}
+
+.mainNavBar .brandHolder img{
+    height: 40px;
+    margin-right: 5px;
+}
+
+.mainNavBar .active {
+    color: var(--birdNewsMainColor) !important
+}
+
+/* header */
+
+header {
+    top: 50px;
+    z-index: 2;
+}
+
+header .headerTitleContainer {
+    max-width: 1200px;
+}
+
+header .headerTitleContainer h1{
+    font-size: 40px;
+}
+
+header .headerNavBar {
+    max-width: 1200px;
+}
+
+header li{
+    width: fit-content;
+    border: 2px solid transparent;
+    margin-bottom: -18px;
+}
+
+header li:after {
+    display: block;
+    content: '';
+    border-bottom: solid 2px var(--healthColor);  
+    transform: scaleX(0);  
+    transition: transform 350ms ease-in-out;
+  }
+header li:hover:after { transform: scaleX(1); }
+
+header .active {
+    color: var(--healthColor) !important;
+}
+
+header .titleOrnament {
+    margin-top: -30px;
+    height: 15px;
+    width: 60%;
+    background: linear-gradient(90deg, rgb(115, 255, 0) 0%, rgb(107, 185, 100) 55%, rgb(111, 180, 146) 100%)
+}
+
+
+/* main */
+
+.main {
+    max-width: 1200px;
+}
+
+
+  /* left aside */
+
+    .leftAside {
+        margin-right: 20px;
+    }
+
+    .leftAside .navIconsHolder {
+        position: sticky;
+        top: 45px
+    }
+
+    main .leftAside img {
+        height: 55px;
+        width: 55px;
+        margin-bottom: 10px;
+        cursor: pointer;
+    }
+
+    main .leftAside img:hover {
+        opacity: 0.8;
+    }
+
+    @media only screen and (max-width: 1050px) {
+        article {
+            width: 100%;
+        }
+        main .rightAside {
+            display: none;
+        }
+    }
+
+    @media only screen and (max-width: 750px) {
+        main .leftAside {
+            display: none;
+        }
+        header li {
+            margin-bottom: 0px;
+        }
+    }
+
+
+  /* article section */
+
+    .articleSection {
+        max-width: 640px;
+    }
+
+    .articleSection article h3 {
+        margin-bottom: 20px;
+        margin-top: 30px;
+    }
+
+    .articleSection article h2 {
+        margin-bottom: 30px;
+    }
+
+    .articleSection article .underTextComment {
+        font-size: 14px;
+    }
+
+    .articleSection iframe {
+        margin-bottom: 20px;
+    }
+
+    .articleSection iframe {
+        margin-top: 10px;
+    }
+
+    /* form and comments */
+
+        /* form */
+
+        form button {
+            background-color: var(--birdNewsMainColor);
+            border: 1px solid black;
+        }
+
+        form button:hover {
+            color: white;
+        }
+
+        form input {
+            text-indent: 10px;
+            outline: none;
+            box-shadow: none;
+        }
+
+        /* comments */
+
+        .commentsContainer .particularComment img {
+            height: 25px;
+            cursor: pointer;
+        }
+
+        .commentsContainer .particularComment .btnsContainer {
+            height: 35px;
+        }
+
+        .commentsContainer .particularComment button {
+            height: 35px;
+            background-color: transparent;
+        }
+
+        .commentsContainer .particularComment button:hover {
+            color: var(--birdNewsMainColor);
+        }
+
+        .commentsContainer .particularAnswer img {
+            height: 25px;
+            cursor: pointer;
+        }
+
+        .commentsContainer .particularAnswer .btnsContainer {
+            height: 35px;
+        }
+
+
+  /* right aside */
+
+    .rightAside {
+        min-width: 350px;
+        margin-left: 20px;
+    }
+    
+    .rightAside .similar {
+        border-bottom: 2px solid var(--healthColor);
+    }
+
+    .rightAside button:hover {
+        color: var(--healthColor);
+    }
+
+        /* similar/recent news */
+
+        .news {
+        border-bottom: 1px solid lightgray;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 3px;
+        height: 80px;
+        }
+
+        .news .newsTitle {
+        font-weight: bold;
+        width: 75%
+        }
+
+        .news .newsImg {
+        height: 60px;
+        width: 25%;
+        margin-right: 10px;
+        }
+
+        .news:hover {
+        background: rgba(0, 0, 0, 0.08);
+        cursor: pointer;
+        }
+
+
+/* footer */
+
+footer {
+    height: 60px;
+    align-items: center;
+    background-color: var(--birdNewsMainColor);
+}
+
+footer .footerContainer{
+    max-width: 1200px;
+    height: 40px;
+}
+
+footer .footerBrandHolder div{
+    font-size: 18px;
+    height: 40px;
+    color: white;
+}
+
+footer img {
+    height: 40px;
+    margin-right: 5px;
+}
+
+@media only screen and (max-width: 765px) {
+    footer .footerBrandHolder {
+        margin-right: -50px;
+    }
+}
+
+footer a {
+    color: white;
+    font-size: 18px;
+}

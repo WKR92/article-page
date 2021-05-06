@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- BT CSS -->
+    <link 
+        rel="stylesheet" 
+        href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" 
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" 
+        crossorigin="anonymous"
+        defer
+    >
+    <!-- BS JavaScript -->
+    <script 
+        src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" 
+        crossorigin="anonymous"
+        defer >
+    </script>
+    <script 
+        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" 
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" 
+        crossorigin="anonymous"
+        defer >
+    </script>
+    <script 
+        src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" 
+         crossorigin="anonymous"
+         defer >
+    </script>
+    <!-- Mine CSS -->
+    <link rel="stylesheet" href="main.css">
+    <!-- Mine JS -->
+    <script type="module" src="./index.js" defer></script>
+    <title>Static-page</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-md navbar-light bg-light border-bottom border-secondary d-flex mainNavBar position-sticky">
+        <div class="container-fluid innerMainNavDiv">
+            <div class="d-flex justify-content-center brandHolder">
+                <a href="#"><img alt="bird_icon" src="./icons/twitter.png" /></a>
+                <a class="navbar-brand font-italic" href="#">BirdNews</a>
+            </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navCategories">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse mb-0" id="navCategories">
+                <ul class="navbar-nav navbar-nav-scroll d-flex justify-content-around w-100">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Polska</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Świat</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Polityka</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Społeczeństwo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Zdrowie</a>
+                    </li>
+                </ul>
+          </div>
+        </div>
+      </nav>
+    <header class="header border-bottom border-secondary mb-3 headerContainer position-sticky">
+        <div class="navbar navbar-expand-md navbar-light bg-light headerTitle">
+            <div class="container-fluid headerTitleContainer">
+                <div class="">
+                    <h1 class="navbar-brand flex justify-content-center" href="#">Zdrowie</h1>
+                    <div class="titleOrnament"></div>
+                </div>
+                <button class="navbar-toggler ml-auto hidden-sm-up float-right" type="button" data-toggle="collapse"
+                 data-target="#innerNavCategories">
+                    <span class="navbar-toggler-icon"></span>
+                </button> 
+            </div>
+        </div>  
+        <nav class="navbar navbar-expand-md navbar-light m-auto bg-white headerNavBar">
+            <div class="collapse navbar-collapse headerInnerNavBar" id="innerNavCategories">
+                <ul class="p-2 navbar-nav navbar-nav-scroll font-weight-bold">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">KORONAWIRUS</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown">
+                            DIETA
+                        </a>
+                        <div class="dropdown-menu">
+                          <a class="dropdown-item" href="#">Warzywa</a>
+                          <a class="dropdown-item" href="#">Owoce</a>
+                          <a class="dropdown-item" href="#">Suplementy</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown">
+                            ĆWICZENIA   
+                        </a>
+                        <div class="dropdown-menu">
+                          <a class="dropdown-item" href="#">Bieganie</a>
+                          <a class="dropdown-item" href="#">Siłownia</a>
+                          <a class="dropdown-item" href="#">Rozciąganie</a>
+                          <a class="dropdown-item" href="#">Joga</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">PSYCHOLOGIA</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">SEKS</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>   
+    </header>
+    <main class="d-flex m-auto main">
+
+        <aside class="leftAside p-2">
+            <div class="p-4 d-flex flex-column justify-content-center navIconsHolder">
+                
+                <a href="https://www.facebook.com/sharer/sharer.php?u=example.org" target="_blank" 
+                    onclick="window.open('https\:\/\/www.facebook.com/sharer/sharer.php?u=example.org','name','width=600,height=400')">
+                    <img class="fb_icon" src='./icons/facebook.png' alt="fb_icon" />
+                </a>
+                <a href="#writeAComment"><img class="msg_icon" src='./icons/chat.png' alt="msg_icon" /></a>
+            </div>
+        </aside>
+
+        <section class="p-2 articleSection">
+            <article class="m-auto">
+                <h2>Pękła kolejna bariera. Najnowszy raport MZ dotyczący koronawirusa w Polsce</h2>
+                <p>Ministerstwo Zdrowia opublikowało najnowszy raport dotyczący liczby zakażeń koronawirusem w Polsce.
+                Jak wynika z danych, 15 kwietnia przybyło 21 130 nowych przypadków. 
+                Z powodu zakażenia koronawirusem zmarły 682 osoby. Łącznie z powodu COVID-19 zmarło już ponad 60 tys. osób.</p>
+                <img class="mb-0 mw-100" alt="covid_fighters" src='./photos/ratownicy.jpg'/>
+                <p class="mb-0 underTextComment">Koronawirus w Polsce. Jest najnowszy raport Ministerstwa Zdrowia z 15 kwietnia</p>
+                <p class="font-italic underTextComment">Źródło: East News</p>
+                <p>Jest najnowszy raport Ministerstwa Zdrowia ws. epidemii koronawirusa w Polsce. Jak wynika z danych,
+                    w ciągu ostatniej doby przybyło 21 130 nowych przypadków. W zeszłym tygodniu (8 kwietnia) 
+                    było to 27 887 zakażeń.</p>
+                <h3>Koronawirus w Polsce. Najnowszy raport Ministerstwa Zdrowia</h3>
+                <p>"Z powodu COVID-19 zmarło 175 osób, natomiast z powodu współistnienia COVID-19 z innymi schorzeniami zmarło
+                     507 osób" - informuje resort zdrowia.</p>
+                <p>Łącznie zmarły 682 osoby, a to oznacza, że przekroczyliśmy liczbę 60 tys. ofiar koronawirusa (60 612 - red.)
+                    od początku epidemii w Polsce. W tym czasie koronawirusem zakaziło się 2 642 242 osób.</p>
+                <h3>Majówka groźna dla życia. Rzad przedłuża obostrzenia</h3>
+                <!--Wszystkie blędy w konsoli pochodzą z ponizszego YT-->
+                <iframe width="100%" height="315" 
+                    src="https://www.youtube.com/embed/JITJEInUX3Q" 
+                    allowfullscreen>
+                </iframe>
+                <p>Najnowsze przypadki zakażeń koronawirusem pochodzą z województw: śląskiego (3142), 
+                    mazowieckiego (2555), wielkopolskiego (2495), dolnośląskiego (2277), małopolskiego (1747), 
+                    łódzkiego (1300), kujawsko-pomorskiego (1085), pomorskiego (1008), podkarpackiego (923), 
+                    lubelskiego (892), zachodniopomorskiego (824), świętokrzyskiego (659), opolskiego (638), 
+                    warmińsko-mazurskiego (520), lubuskiego (505), podlaskiego (374).</p>
+                <p>"186 zakażeń to dane bez wskazania adresu, które zostaną uzupełnione przez inspekcję sanitarną"
+                     - czytamy w raporcie.</p>
+                <p>Jak poinformował resort zdrowia, w szpitalach znajdują się obecnie 33 253 osoby - 
+                    to o 653 mniej niż w środę 14 kwietnia. Z kolei leczenia respiratorem wymaga 3443 pacjentów (-14).
+                    Na przymusowej kwarantannie przebywa 352 951 osób.</p>
+                <p>Ministerstwo Zdrowia przekazało też dane dotyczące liczby testów na obecność koronawirusa, 
+                    którą wykonano w ciągu ostatniej doby. To ponad 91,1 tysięcy badań.</p>
+                <img class="mb-0 mw-100" alt="civd_map" src="./photos/mapa.jpg"/>
+                <p class="mb-0 underTextComment">Pękła kolejna bariera. Najnowszy raport MZ dotyczący koronawirusa w Polsce</p>
+                <p class="font-italic underTextComment">Źródło: WP, Fot: WP</p>
+                <h3>Koronawirus w Polsce. Lockdown przedłużony. Co z majówką?</h3>
+                <p>Przez Polskę przetacza się III fala zakażeń koronawirusem. W środę odnotowano 21 283 przypadki. 
+                    Z powodu COVID-19 zmarły 803 osoby. Jak zaznacza Ministerstwo Zdrowia, zauważalny jest spadek liczby zakażeń, 
+                    jednak "apogeum przechodzi teraz przez szpitale".</p>
+                <p>W związku z dużą liczbą ofiar koronawirusa, a także złą sytuacją w polskich placówkach medycznych, 
+                    w środę Ministerstwo Zdrowia poinformowało o przedłużeniu obostrzeń o kolejny tydzień - do niedzieli 
+                    25 kwietnia.</p>
+                <p>Zdecydowano się jednak na pewne wyjątki. - Od najbliższego poniedziałku dzieci będą mogły wrócić do przedszkoli
+                    i żłobków. Przywrócimy też możliwość uprawiania sportu na świeżym powietrzu dla grup do 25 osób
+                    - przekazał Adam Niedzielski. Tym samym potwierdził wcześniejsze doniesienia Wirtualnej Polski.</p>
+                <p>Zapadła też decyzja ws. zbliżającej się majówki. - Do 3 maja nie będzie możliwe prowadzenie działalności 
+                    hoteli i miejsc noclegowych. Ten zakaz jest przedłużony o kolejne dwa tygodnie, by nie było dylematów, 
+                    co do planów majówkowych - tłumaczył minister zdrowia.</p>
+            </article>
+
+            <hr>
+            <form class="was-validated mb-5" id="writeAComment">
+                <div class="">
+                  <textarea class="form-control is-invalid" id="textArea" placeholder="Dodaj komentarz:" required rows="4"></textarea>
+                  <div class="d-flex">
+                    <div class="was-validated w-75">
+                        <input minlength="3" id="textInput" required class="form-control is-invalid" type="text" placeholder="Twój nick">
+                    </div>
+                    <button class="w-25 rounded submitBtn" type="submit">Zatwierdź</button>
+                  </div>
+                </div>
+            </form>
+
+            <section class="commentsContainer mb-5" ></section>
+        </section>
+
+        <aside class="rightAside">
+            <div class="">
+                <div class="d-flex">
+                    <button class="btn similar w-50 mb-3">PODOBNE</button>
+                    <button class="btn recent w-50 mb-3">NAJNOWSZE</button>
+                </div>
+                <div class="newsHolder"></div>
+            </div>            
+        </aside>
+    </main>
+
+    <footer class="w-100 font-italic d-flex justify-content-center">
+        <div class="footerContainer d-flex">
+            <div class="d-flex footerBrandHolder">
+                <img alt="bird_icon" src="./icons/twitter.png" />
+                <div class="navbar-brand font-italic" href="#">
+                    BirdNews - najszybsze newsy w lokalnym gnieździe
+                </div>
+            </div>
+            <nav class="navbar navbar-expand-md d-flex footerNav">
+                <div class="collapse navbar-collapse">
+                    <ul class="navbar-nav d-flex justify-content-around w-100">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Polska</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Świat</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Polityka</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </footer>
+</body>
+</html>
